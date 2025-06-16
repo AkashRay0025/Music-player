@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, #141e30, #243b55);
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.music-player {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 340px;
+  padding: 30px 20px;
+  text-align: center;
+  position: relative;
+}
+
+.album-art {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  background: url('https://cdn-icons-png.flaticon.com/512/727/727245.png') no-repeat center;
+  background-size: cover;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.song-info h2 {
+  font-size: 22px;
+  margin-bottom: 5px;
+}
+
+.song-info p {
+  font-size: 15px;
+  color: #ccc;
+}
+
+.controls {
+  margin: 20px 0;
+}
+
+.controls button {
+  font-size: 20px;
+  margin: 0 10px;
+  padding: 12px 16px;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.controls button:hover {
+  background: #03a9f4;
+}
+
+.progress-container,
+.volume-control {
+  margin: 15px 0;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: #00bcd4;
+}
+
+.volume-control label {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+
